@@ -19,6 +19,10 @@ p {
   
   /* ヘッダー */
   header {
+    /* ヘッダーに「display: flex」で命令すると、ロゴ（img src="images/logo.png）と
+    nav（MISSION、PRODUCT、ABOUTなど）が横並びになるのは、Flexboxのflex-direction
+    プロパティの初期値がrowなので、指定しなくてもアイテムが左から右に配置されるから。
+    教材22章の3節の最後に書いてある。 */
     display: flex;
     justify-content: space-between;
   }
