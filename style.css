@@ -10,6 +10,7 @@ p {
 /*================
  PC用のスタイル 
 =================*/
+ @media screen and (min-width: 768px) {
   /* 横幅設定 */
   body {
     max-width: 1080px;
@@ -486,3 +487,25 @@ footer {
   color: #ffffff;
   float: right;
 }
+
+}
+
+  /*====================
+  スマートフォン用のスタイル
+  =====================*/
+  @media screen and (max-width: 767px) {
+    body {
+      min-width: 375px;
+      margin: 0;
+    }
+   
+   #nav-pc {
+    display: none;
+  }
+
+  #menu-sp {
+    float: right;
+    padding: 0;
+  }
+}
+
